@@ -228,10 +228,10 @@ def balance(currentuser):
     if user_data:
         userbalance = user_data["balance"]
         print(f"Current Balance: {userbalance}")
-        balchoice = input("Please Choose an Option")
         print("1. Top-Up Balance")
         print("2. Return to Main Menu")
         print("Enter your Choice: ")
+        balchoice = str(input("Please Choose an Option:"))
         if balchoice == "1":
             topup = float(input("Amount to Top-Up: "))
             newbal = userbalance + topup
